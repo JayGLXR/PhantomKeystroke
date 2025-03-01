@@ -2,7 +2,7 @@
 name = "phantom_keystroke"
 version = "1.0.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["JayGLXR"]
 description = "A Rust application for keyboard input obfuscation"
 license = "MIT"
 
