@@ -1,0 +1,43 @@
+# PhantomKeystroke Configuration
+
+# Mode configuration (1: Random, 2: Attribute)
+[mode]
+type = 2
+
+# Attribute mode configuration
+[attribute]
+# Country code for keyboard layout (DE, FR, RU, JP)
+country = "DE"
+# Language code for text transformation (de, fr, ru, ja)
+language = "de"
+# Timezone offset (e.g., "+1" for CET)
+timezone = "+1"
+
+# Plugin configuration
+[plugin]
+# Plugin name (null, cobaltstrike, sliver, mythic, custom)
+name = "null"
+
+# Plugin parameters
+[plugin.parameters]
+# Uncomment and modify the appropriate section for your selected plugin:
+
+## For Null plugin (default, no parameters needed)
+# No parameters required
+
+## For Cobalt Strike plugin
+# endpoint = "http://localhost:50050"
+
+## For Sliver plugin
+# address = "localhost:31337"
+# token = "your-auth-token"  # Optional authentication token
+
+## For Mythic plugin
+# url = "http://localhost:7443"
+# api_key = "your-mythic-api-key"  # Required for API access
+# callback_uuid = "existing-callback-uuid"  # Either this or payload_uuid is required
+# payload_uuid = "payload-uuid-for-new-callback"  # Used when registering a new callback
+
+## For custom plugin
+# path = "plugins/libmy_custom_plugin.so"  # Path to your custom plugin library
+# connection_string = "custom-connection-parameters"  # Custom parameters for your plugin 
